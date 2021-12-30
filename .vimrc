@@ -1,4 +1,4 @@
-colorscheme molokai
+#colorscheme molokai
 set background=dark
 syntax on
 

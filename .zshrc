@@ -75,7 +75,6 @@ setopt hist_ignore_all_dups
 export PATH="$PYENV_ROOT/bin:$PATH"
 export PYENV_ROOT="$HOME/.pyenv"
 
-eval "$(pyenv init -)"
 # スペースから始まるコマンド行はヒストリに残さない
 setopt hist_ignore_space
  
@@ -90,7 +89,6 @@ bindkey '^R' history-incremental-search-backward
 
 #alias設定
 alias ll='ls -al'
-alias conoha='sudo ssh -i /Users/y.t/.ssh/id_rsa_6goma9.pem 6goma9@kh.6goma9.com'
 
 #何かを有効化
 fpath=(/usr/local/share/zsh-completions $fpath)
@@ -99,7 +97,6 @@ autoload -U compinit
 compinit -u
 
 export PATH=/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/:$HOME/.config/composer/vendor/bin:$PATH
-eval "$(direnv hook zsh)"
 
 # phpbrew
 [[ -e ~/.phpbrew/bashrc ]] && source ~/.phpbrew/bashrc
